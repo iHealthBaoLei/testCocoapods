@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.name         = "BEST"
   s.version      = "0.1"
-  s.license      = { :type => 'BSD' }
+s.license      = { :type => 'BSD', :file=> 'LICENSE' }
   s.homepage     = "https://github.com/iHealthBaoLei/testCocoapods"
   s.author       = { "Lei Bao" => "email@address.com" }
   s.summary      = "for test"
@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "**/*.{h,m}"
+  s.libraries = 'Best'
 # s.public_header_files = "Headers/*.h"
 
 
