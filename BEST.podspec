@@ -26,8 +26,9 @@ s.license      = { :type => 'BSD', :file=> 'LICENSE' }
   #  Not including the public_header_files will make all headers public.
   #
 
-s.source_files  = "**/*.{h,m}","*.{a}"
-  s.libraries = 'Best'
+  s.source_files  = "**/*.{h,m}"
+  s.vendored_libraries = '*.{a}'
+  # s.libraries = 'Best'
 # s.public_header_files = "Headers/*.h"
 
 
