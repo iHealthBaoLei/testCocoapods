@@ -10,11 +10,11 @@ Pod::Spec.new do |s|
 
   s.name         = "BEST"
   s.version      = "0.1"
-s.license      = { :type => 'BSD', :file=> 'LICENSE' }
+  s.license      = { :type => 'BSD', :file=> 'LICENSE' }
   s.homepage     = "https://github.com/iHealthBaoLei/testCocoapods"
   s.author       = { "Lei Bao" => "email@address.com" }
   s.summary      = "for test"
-  s.platform     = :ios, "8.0"
+  # s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/iHealthBaoLei/testCocoapods.git", :tag => "0.1" }
 
 
@@ -26,8 +26,8 @@ s.license      = { :type => 'BSD', :file=> 'LICENSE' }
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "**/*.{h,m}"
-  s.vendored_libraries = '*.{a}'
+  s.source_files  = "Pods/Headers/*.{h,m}"
+  s.vendored_libraries = 'Pods/Headers/*.{a}'
   # s.libraries = 'Best'
 # s.public_header_files = "Headers/*.h"
 
